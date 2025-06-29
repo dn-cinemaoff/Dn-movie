@@ -10,17 +10,19 @@ module.exports = {
       "Victor Ratnayake original",
       "Nanda Malini original",
       "Sanuka Wickramasinghe original",
+      "manakkalpitha original",
+      "chamara ranawaka original",
       "Kasun Kalhara original",
       "Uresha Ravihari original",
+      "damith asnka original",
+      "jothipala original",
+      "raps original",
       "Dinesh Kanagaratnam original"
     ],
   //====================menu=================================
   MENUMSG: function (pushname, runtime, config) {
     return `
-✘◍ᴛʜᴀɴᴋꜱ ꜰᴏʀ ᴜꜱɪɴɢ ʙᴏᴛ.
-
-⭕ *ᎷϴᏙᏆᎬ ႮᏢᎠᎪͲᎬ ᏟᎻᎪΝΝᎬᏞ*➻
-https://whatsapp.com/channel/0029VbAXPal4yltU1ep32l0H
+✘◍ ᴛʜᴀɴᴋꜱ ꜰᴏʀ ᴜꜱɪɴɢ ʙᴏᴛ.
 
 ┏━━━━❮ 📆 ᴛᴏ ᴅᴀʏ 📆❯━━━━
 ┃
@@ -39,13 +41,15 @@ https://whatsapp.com/channel/0029VbAXPal4yltU1ep32l0H
 ┃🎡 𝚅𝚎𝚛𝚜𝚒𝚘𝚗 : ${packageJson.version}
 ┃📡 𝙿𝚕𝚊𝚝𝚏𝚘𝚛𝚖 : ${os.platform()}
 ┃💡 𝙷𝚘𝚜𝚝 : ${os.hostname()}
-┃🧸 𝙾𝚠𝚗𝚎𝚛 : ${config.OWNER_NAME}
+┃🧸 𝙾𝚠𝚗𝚎𝚛 :DILAKSHA PRABATH
 ┃🔊 𝙼𝚘𝚍𝚎 : ${config.MODE}
 ┃🧮 𝚄𝚙𝚝𝚒𝚖𝚎 : ${runtime(process.uptime())}
 ┃🪅 𝙼𝚎𝚖 : ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(
       2
     )}MB / ${Math.round(os.totalmem() / 1024 / 1024)}MB
 ┗━━━━━━━━━━━━━━━
+⭕ *ᎷϴᏙᏆᎬ ႮᏢᎠᎪͲᎬ ᏟᎻᎪΝΝᎬᏞ*➻
+https://whatsapp.com/channel/0029VbAXPal4yltU1ep32l0H
         `.trim();
   },
   //======================download============================
@@ -64,7 +68,7 @@ URL    * ${q}
     return `
 ❄️ 𝑫𝑰𝑳𝑨 FB DOWNLOADER ❄️
     
-🌬️ TITLE 🌬️ ${title}
+🎞 TITLE 🎞 ${title}
 
 Fb-Url: -=-${q} 
         `.trim();
@@ -110,7 +114,8 @@ Twitter URL: ${q}
       2
     )}MB / ${Math.round(require("os").totalmem / 1024 / 1024)}MB
 ┗━━━━━━━━━━━━━━━
-
+⭕ *ᎷϴᏙᏆᎬ ႮᏢᎠᎪͲᎬ ᏟᎻᎪΝΝᎬᏞ*➻
+https://whatsapp.com/channel/0029VbAXPal4yltU1ep32l0H
 🧸 ᴇɴᴏʏ ᴛʜᴇ 𝗯𝗼𝘁 ᴏ𝗳 𝑫𝑰𝑳𝑨🫟
         `.trim();
   },
@@ -130,6 +135,8 @@ Twitter URL: ${q}
 📆 *𝚁𝚎𝚕𝚎𝚊𝚜𝚎 𝙳𝚊𝚝𝚎:* ${movieData.metadata?.releaseDate || "𝙽/𝙰"}
 🌍 *𝙲𝚘𝚞𝚗𝚝𝚛𝚢:* ${movieData.metadata?.country || "𝙽/𝙰"}
 ⏰ *𝙳𝚞𝚛𝚊𝚝𝚒𝚘𝚗:* ${movieData.metadata?.runtime || "𝙽/𝙰"}
+⭕ *ᎷϴᏙᏆᎬ ႮᏢᎠᎪͲᎬ ᏟᎻᎪΝΝᎬᏞ*➻
+https://whatsapp.com/channel/0029VbAXPal4yltU1ep32l0H
         `.trim();
   },
   CINESUBZ: function (title, metadata, rating) {
@@ -143,6 +150,8 @@ Twitter URL: ${q}
 🌍 *𝙲𝚘𝚞𝚗𝚝𝚛𝚢:* ${metadata?.country || "𝙽/𝙰"}
 ⏰ *𝙳𝚞𝚛𝚊𝚝𝚒𝚘𝚗:* ${metadata?.runtime || "𝙽/𝙰"}
 🎭 *𝙶𝚎𝚗𝚛𝚎𝚜:* ${metadata?.genres.map((g) => `#${g}`).join(" • ") || "𝙽/𝙰"} 
+⭕ *ᎷϴᏙᏆᎬ ႮᏢᎠᎪͲᎬ ᏟᎻᎪΝΝᎬᏞ*➻
+https://whatsapp.com/channel/0029VbAXPal4yltU1ep32l0H
         `.trim();
   },
   CINETVSHOW: function (movieResponse) {
@@ -152,6 +161,20 @@ Twitter URL: ${q}
 📺 *𝚃𝚅 𝚂𝚑𝚘𝚠:* ${movieResponse.episodeInfo?.title || "𝙽/𝙰"}
 🎞️ *𝙴𝚙𝚒𝚜𝚘𝚍𝚎 𝚃𝚒𝚝𝚕𝚎:* ${movieResponse.episodeInfo?.episodeTitle || "𝙽/𝙰"}
 📅 *𝙳𝚊𝚝𝚎:* ${movieResponse.episodeInfo?.date || "𝙽/𝙰"}
+⭕ *ᎷϴᏙᏆᎬ ႮᏢᎠᎪͲᎬ ᏟᎻᎪΝΝᎬᏞ*➻
+https://whatsapp.com/channel/0029VbAXPal4yltU1ep32l0H
+        `.trim();
+  },
+  SINHALASUBTVSHOW: function (episodeInfo, quality) {
+    return `
+📽️ *『 𝐃𝐍 𝐌𝐎𝐕𝐈𝐄𝐒 』* 🍿
+
+📺 *TV Show:* ${episodeInfo.title || "N/A"}
+🎞️ *Episode:* ${episodeInfo.episodeTitle || "N/A"}
+📅 *Date:* ${episodeInfo.date || "N/A"}
+💾 *Quality:* ${quality.toUpperCase()}
+⭕ *ᎷϴᏙᏆᎬ ႮᏢᎠᎪͲᎬ ᏟᎻᎪΝΝᎬᏞ*➻
+https://whatsapp.com/channel/0029VbAXPal4yltU1ep32l0H
         `.trim();
   },
   CINETVSHOWALLDL: function (movieData) {
@@ -161,6 +184,19 @@ Twitter URL: ${q}
 🔮 *𝙼𝚘𝚟𝚒𝚎 𝚃𝚒𝚝𝚕𝚎:* ${movieData.data.title}
 📆 *𝚁𝚎𝚕𝚎𝚊𝚜𝚎 𝙳𝚊𝚝𝚎:* ${movieData.data.releaseDate}
 🌍 *𝙽𝚎𝚝𝚠𝚘𝚛𝚔:* ${movieData.data.network}
+⭕ *ᎷϴᏙᏆᎬ ႮᏢᎠᎪͲᎬ ᏟᎻᎪΝΝᎬᏞ*➻
+https://whatsapp.com/channel/0029VbAXPal4yltU1ep32l0H
+        `.trim();
+  },
+  SINHALASUBTVSHOWALLDL: function (movieData) {
+    return `
+📽️ *『 𝐃𝐍 𝐌𝐎𝐕𝐈𝐄𝐒 』* 🍿
+
+✨ *𝙼𝚘𝚟𝚒𝚎 𝚃𝚒𝚝𝚕𝚎:* ${movieData.data.showInfo.title}
+📆 *𝚁𝚎𝚕𝚎𝚊𝚜𝚎 𝙳𝚊𝚝𝚎:* ${movieData.data.showInfo.releaseDate}
+🌐 *𝙽𝚎𝚝𝚠𝚘𝚛𝚔:* ${movieData.data.showInfo.network}
+⭕ *ᎷϴᏙᏆᎬ ႮᏢᎠᎪͲᎬ ᏟᎻᎪΝΝᎬᏞ*➻
+https://whatsapp.com/channel/0029VbAXPal4yltU1ep32l0H
         `.trim();
   },
   SIMNHALAMOVIE: function (title) {
@@ -168,6 +204,8 @@ Twitter URL: ${q}
 📽️ *『 𝐃𝐍 𝐌𝐎𝐕𝐈𝐄𝐒 』* 🍿
 
 🎞️ *𝚃𝚒𝚝𝚕𝚎:* ${title}  
+⭕ *ᎷϴᏙᏆᎬ ႮᏢᎠᎪͲᎬ ᏟᎻᎪΝΝᎬᏞ*➻
+https://whatsapp.com/channel/0029VbAXPal4yltU1ep32l0H
         `.trim();
   },
   AWAMOVIE: function (title, releaseDate, country) {
@@ -176,7 +214,9 @@ Twitter URL: ${q}
 
 🔮 *𝚃𝚒𝚝𝚕𝚎:* ${title}  
 📆 *𝚁𝚎𝚕𝚎𝚊𝚜𝚎 𝙳𝚊𝚝𝚎:* ${releaseDate}  
-🌍 *𝙲𝚘𝚞𝚗𝚝𝚛𝚢:*  ${country}      
+🌍 *𝙲𝚘𝚞𝚗𝚝𝚛𝚢:*  ${country}  
+⭕ *ᎷϴᏙᏆᎬ ႮᏢᎠᎪͲᎬ ᏟᎻᎪΝΝᎬᏞ*➻
+https://whatsapp.com/channel/0029VbAXPal4yltU1ep32l0H      
         `.trim();
   },
   ANIMEMOVIE: function (title, releaseDate, country, duration) {
@@ -186,7 +226,9 @@ Twitter URL: ${q}
 🔮 ${title} 
 📅 𝗥𝗲𝗹𝗲𝗮𝘀𝗲 𝗗𝗮𝘁𝗲:${releaseDate}  
 🌍 𝗖𝗼𝘂𝗻𝘁𝗿𝘆:${country}  
-⏰ 𝗗𝘂𝗿𝗮𝘁𝗶𝗼𝗻:${duration}  
+⏰ 𝗗𝘂𝗿𝗮𝘁𝗶𝗼𝗻:${duration}
+⭕ *ᎷϴᏙᏆᎬ ႮᏢᎠᎪͲᎬ ᏟᎻᎪΝΝᎬᏞ*➻
+https://whatsapp.com/channel/0029VbAXPal4yltU1ep32l0H  
         `.trim();
   },
   BAISCOMOVIE: function (title, year, rating, duration) {
@@ -197,6 +239,8 @@ Twitter URL: ${q}
 📅 𝗥𝗲𝗹𝗲𝗮𝘀𝗲 𝗗𝗮𝘁𝗲:${year}  
 🌍 RATINGS:${rating}  
 ⏰ 𝗗𝘂𝗿𝗮𝘁𝗶𝗼𝗻:${duration}  
+⭕ *ᎷϴᏙᏆᎬ ႮᏢᎠᎪͲᎬ ᏟᎻᎪΝΝᎬᏞ*➻
+https://whatsapp.com/channel/0029VbAXPal4yltU1ep32l0H 
         `.trim();
   },
   ADULTMOVIE: function (title, rating, description) {
@@ -210,6 +254,8 @@ Twitter URL: ${q}
 ${description}
 ──────────────────
 📥 *Downloading...*
+⭕ *ᎷϴᏙᏆᎬ ႮᏢᎠᎪͲᎬ ᏟᎻᎪΝΝᎬᏞ*➻
+https://whatsapp.com/channel/0029VbAXPal4yltU1ep32l0H
         `.trim();
   },
   ANIMOMOVIE: function (movieData) {
@@ -219,7 +265,9 @@ ${description}
 🔮 ${movieData.title}  
 🪄 Description:${movieData.description} 
     
-🌍  ${movieData.plot} 
+🌍  ${movieData.plot}
+⭕ *ᎷϴᏙᏆᎬ ႮᏢᎠᎪͲᎬ ᏟᎻᎪΝΝᎬᏞ*➻
+https://whatsapp.com/channel/0029VbAXPal4yltU1ep32l0H
         `.trim();
   },
   FILMPOMOVIE: function (title, rating, year, duration) {
@@ -230,6 +278,8 @@ ${description}
 🪄 *𝙸𝙼𝙳𝙱 𝚁𝚊𝚝𝚒𝚗𝚐:* ${rating}
 📅 *𝚁𝚎𝚕𝚎𝚊𝚜𝚎 𝙳𝚊𝚝𝚎:* ${year}
 ⏰ *𝙳𝚞𝚛𝚊𝚝𝚒𝚘𝚗:* ${duration}
+⭕ *ᎷϴᏙᏆᎬ ႮᏢᎠᎪͲᎬ ᏟᎻᎪΝΝᎬᏞ*➻
+https://whatsapp.com/channel/0029VbAXPal4yltU1ep32l0H
         `.trim();
   },
   //=====================youtube===========================================
@@ -259,7 +309,7 @@ ${description}
 ➥ *Uploaded On:* ${data.ago} 
 ➥ *Link:* ${data.url}
 
-🦠 *Enjoy the video brought to you by DILA Bot!* 
+🦠 *Enjoy the video brought to you by DILA Bot!*  
         `.trim();
   },
   VIDEO: function (data) {
@@ -294,7 +344,7 @@ ${description}
   //=====================hiru news===========================================
   AUTONEWS: function (source, newsData, isGroup, groupMetadata, conf) {
     return `
-📰 *『  𝑫𝑵 𝑵𝑬𝑾𝑺 』* 🗞️
+📰 *『 𝑫𝑵 𝑵𝑬𝑾𝑺 』* 🗞️
 
 ✨ *${source.toUpperCase()} News Update*
 
